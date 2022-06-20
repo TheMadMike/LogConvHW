@@ -6,13 +6,20 @@ converter described in [[1]](#1) and [[2]](#2).
 # Dependencies
 
 - Icarus Verilog 11.x
+- GNU Make
 - GTKWave
 
-# Building and testing
+# Simulation
 
-(...)
+1. Download/clone the repository
 
-#
+2. Open terminal/console in the directory of the repository and type:
+
+```
+    make
+```
+
+3. Open tb.vcd using GTKWave (or other VCD software)
 
 # References
 <a id="1">[1]</a>
