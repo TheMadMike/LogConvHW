@@ -1,4 +1,6 @@
+VERILOG=iverilog
+TB_PATH=src/testbenches/
+
 all:
-	iverilog src/tb.v -o out.vvp -I src/
-	vvp out.vvp
+	${VERILOG} ${TB_PATH}${tb}.v -o ${tb}.vvp -I src/
 
