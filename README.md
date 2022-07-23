@@ -9,17 +9,21 @@ converter described in [[1]](#1) and [[2]](#2).
 - GNU Make
 - GTKWave
 
-# Simulation
+# Run test benches / simulate
 
 1. Download/clone the repository
 
 2. Open terminal/console in the directory of the repository and type:
 
 ```
-    make
+    make tb=<test bench file name (without .v extension)>
+
+    vvp *.vvp
 ```
 
-3. Open tb.vcd using GTKWave (or other VCD software)
+3. Open generated .vcd file using GTKWave (or other VCD software)
+
+4. For some of the test benches you can also see the io signals in .csv files
 
 # References
 <a id="1">[1]</a>
