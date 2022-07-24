@@ -5,12 +5,13 @@ import sys
 from fa import verify_full_adder
 from csa import verify_csa
 from cpa import verify_cpa
+from atree import verify_atree
 
 VERIFIER_DICT = {
     'fa': verify_full_adder,
     'csa': verify_csa,
     'cpa': verify_cpa,
-    'atree': None
+    'atree': verify_atree
 }
 
 if len(sys.argv) != 3:

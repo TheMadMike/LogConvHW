@@ -1,6 +1,9 @@
 `ifndef ADDER_TREE_V
 `define ADDER_TREE_V
 
+`include "cpa.v"
+`include "csa.v"
+
 /*
     Implementation of the adder tree block (4 operand  13-bit adder)
 */
