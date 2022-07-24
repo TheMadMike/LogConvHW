@@ -2,3 +2,4 @@
 *.vvp
 *.vcd
 .vscode
+__pycache__
