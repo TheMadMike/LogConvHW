@@ -1,3 +1,4 @@
+from error import print_err
 from bit import bitv
 
 def verify_csa(data: list):

@@ -4,11 +4,12 @@
 import sys
 from fa import verify_full_adder
 from csa import verify_csa
+from cpa import verify_cpa
 
 VERIFIER_DICT = {
     'fa': verify_full_adder,
     'csa': verify_csa,
-    'cpa': None,
+    'cpa': verify_cpa,
     'atree': None
 }
 
