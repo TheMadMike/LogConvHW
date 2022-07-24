@@ -25,7 +25,7 @@ module full_adder_tb();
             cin = i[2];
             #T;
 
-            $fdisplay(output_file, "%b, %b%b", i, s, cout);
+            $fdisplay(output_file, "%b, %b%b", i[2:0], s, cout);
         end
         
     end 
