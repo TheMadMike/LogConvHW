@@ -1,7 +1,9 @@
 `ifndef CSA_V
 `define CSA_V
 
-// Carry Save Adder implementation
+`include "fullAdder.v"
+
+// 13-bit carry save adder block
 module csa(input [12:0] a, b, c, output [12:0] sum, carry);
 
     generate
