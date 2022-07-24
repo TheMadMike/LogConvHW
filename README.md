@@ -8,6 +8,7 @@ converter described in [[1]](#1) and [[2]](#2).
 - Icarus Verilog 11.x
 - GNU Make
 - GTKWave
+- Python 3
 
 # Run test benches / simulate
 
@@ -24,6 +25,21 @@ converter described in [[1]](#1) and [[2]](#2).
 3. Open generated .vcd file using GTKWave (or other VCD software)
 
 4. For some of the test benches you can also see the io signals in .csv files
+
+# Verification
+
+Functional verification in this project is done in python, the verifiers for each module
+were modeled on theoretical assumptions of how such module should work.
+Bear in mind that the test benches were designed for a limited number of input vectors (i.e. csa and cpa are only tested on 4-bit inputs),
+so verification might not always be 100% accurate.
+
+1. Make sure you've run the simulation of a specified test bench and it produced a .csv file
+
+2. In terminal/console type:
+
+```
+    make verify csv=<csv file name> verifier=<use a key from VERIFIER_DICT in verify.py>
+```
 
 # References
 <a id="1">[1]</a>
